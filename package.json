@@ -18,5 +18,9 @@
   "homepage": "https://github.com/Burnysheff/Crypto#readme",
   "devDependencies": {
     "hardhat": "^2.16.1"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-web3": "^2.0.0"
   }
 }
