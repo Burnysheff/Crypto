@@ -1,0 +1,22 @@
+{
+  "name": "sample_project",
+  "version": "1.0.0",
+  "description": "Sample project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Burnysheff/Crypto.git"
+  },
+  "author": "Burnysheff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Burnysheff/Crypto/issues"
+  },
+  "homepage": "https://github.com/Burnysheff/Crypto#readme",
+  "devDependencies": {
+    "hardhat": "^2.16.1"
+  }
+}
