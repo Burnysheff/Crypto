@@ -4,8 +4,8 @@ pragma solidity >=0.4.22 <0.9.0;
 // This import is automatically injected by Remix
 import "remix_tests.sol"; 
 
-import "Test.sol";
-import "Inter.sol";
+import "Paper_scissors_stone.sol";
+import "Connector.sol";
 
 import "@openzeppelin/contracts/utils/Strings.sol";
 
