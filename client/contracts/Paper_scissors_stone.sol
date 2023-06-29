@@ -4,6 +4,8 @@ pragma solidity ^0.8.9;
 contract Demo {
     event Played(bool result, string user, string bot);
 
+    uint public checker;
+
     modifier isCorrect(bytes32 user) {
         if (user == keccak256(abi.encodePacked("paper"))) {
             _;
@@ -73,10 +75,11 @@ keccak256(abi.encodePacked("scissors"))) {
         delete commits[msg.sender];
     }
 
-    uint counter = 1;
+    uint public counter = 1;
     function random() public returns (uint rand) {
         counter++;
-        rand = uint(keccak256(abi.encodePacked(block.timestamp, 
-msg.sender, counter))) % 2;
+        checker = uint(keccak256(abi.encodePacked(block.timestamp, 
+msg.sender, counter))) % 3;
+        rand = checker;
     }
 }
