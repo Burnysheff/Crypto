@@ -73,8 +73,8 @@ keccak256(abi.encodePacked("scissors"))) {
         delete commits[msg.sender];
     }
 
-    uint counter =1;
-    function random() private returns (uint rand) {
+    uint counter = 1;
+    function random() public returns (uint rand) {
         counter++;
         rand = uint(keccak256(abi.encodePacked(block.timestamp, 
 msg.sender, counter))) % 2;
